@@ -8,7 +8,7 @@ import { Router } from '@angular/router'
 })
 export class AppComponent {
     public href: string = '';
-
+    date = new Date()
     constructor(private router: Router) {}
 
     ngOnInit() {

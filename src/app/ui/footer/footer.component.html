@@ -1,0 +1,81 @@
+<footer class="bg-white py-12">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="grid gap-4">
+                <h2 class="text-indigo-700 text-3xl font-extrabold">Mii</h2>
+                <p class="text-gray-500 text-sm">
+                    Geek is feature-rich components and beautifully Bootstrap UIKit for developers, 
+                    built with bootstrap responsive framework.
+                </p>
+                <div class="flex gap-4">
+                    <ng-icon name="bootstrapFacebook" size="20" color="#555" strokeWidth="1" class="cursor-pointer"></ng-icon>
+                    <ng-icon name="bootstrapTwitter" size="20" color="#555" strokeWidth="1" class="cursor-pointer"></ng-icon>
+                    <ng-icon name="bootstrapInstagram" size="20" color="#555" strokeWidth="1" class="cursor-pointer"></ng-icon>                    
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-2 col-span-2 pl-20">
+                <div>
+                    <h6 class="text-indigo-950 text-xl font-bold mb-6">Company</h6>
+                    <ul class="grid gap-2">
+                        <li><a routerLink="/about" class="text-sm text-gray-500 hover:text-indigo-500">About</a></li>
+                        <li><a href="#" class="text-sm text-gray-500 hover:text-indigo-500">Pricing</a></li>
+                        <li><a href="#" class="text-sm text-gray-500 hover:text-indigo-500">Blog</a></li>
+                        <li><a href="#" class="text-sm text-gray-500 hover:text-indigo-500">Careers</a></li>
+                        <li><a routerLink="/contacts" class="text-sm text-gray-500 hover:text-indigo-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="text-indigo-950 text-xl font-bold mb-6">Support</h6>
+                    <ul class="grid gap-2">
+                        <li><a href="#" class="text-sm text-gray-500 hover:text-indigo-500">Help and Support</a></li>
+                        <li><a href="#" class="text-sm text-gray-500 hover:text-indigo-500">Become Instructor</a></li>
+                        <li><a href="#" class="text-sm text-gray-500 hover:text-indigo-500">Get the app</a></li>
+                        <li><a href="#" class="text-sm text-gray-500 hover:text-indigo-500">FAQ’s</a></li>
+                        <li><a href="#" class="text-sm text-gray-500 hover:text-indigo-500">Tutorial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="text-indigo-950 text-xl font-bold mb-6">Get in touch</h6>
+                    <ul class="grid gap-4 text-gray-500">
+                        <li class="text-sm"><b>339 McDermott Points Hettingerhaven, NV 15283</b></li>
+                        <li class="text-sm">E-mail: <a href="mailto:support@mii.com" class="text-indigo-500 hover:text-indigo-900">support@mii.com</a></li>
+                        <li class="text-sm">Phone: <a href="tel:+7900123456789" class="text-gray-900 font-bold">+7 (900) 123 456 789</a></li>
+                        <li class="flex gap-3">
+                            <img src="/assets/image/playstore.svg" class="w-6/12 cursor-pointer" alt="playstore" />
+                            <img src="/assets/image/appstore.svg" class="w-6/12 cursor-pointer" alt="appstore" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="max-w-6xl mx-auto pt-5 mt-10 border-t border-gray-300">
+        <div class="flex items-center justify-between">
+            <p class="text-sm text-gray-500">
+                <b>&copy; {{ date | date: 'yyyy'}} Mii</b>, &middot; All Right Recerved &middot; 
+                by <a 
+                        href="http://defina.ru" 
+                        class="text-indigo-500 hover:text-indigo-900 no-underline hover:underline"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        Defina ÜO
+                    </a>
+            </p>  
+            <div class="flex gap-8">
+                <a href="#" class="text-gray-500 text-sm hover:text-indigo-500 no-underline hover:underline">Privacy Policy</a>  
+                <a href="#" class="text-gray-500 text-sm hover:text-indigo-500 no-underline hover:underline">Cookie Notice</a>  
+                <a href="#" class="text-gray-500 text-sm hover:text-indigo-500 no-underline hover:underline">Terms of Use</a>                
+            </div>    
+            <div class="flex gap-1">
+                <ng-icon name="heroLanguage" size="25" color="#555" strokeWidth="1"></ng-icon>
+                <select name="language" class="text-sm outline-none" id="lang">
+                    <option value="Выберите язык" disabled selected>Выберите язык</option>
+                    <option value="English">English</option>
+                    <option value="Eesti">Eesti</option>
+                    <option value="Русский">Русский</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</footer>
