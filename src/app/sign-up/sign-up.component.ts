@@ -1,6 +1,7 @@
 import { Title } from '@angular/platform-browser'
 import { Inject, Component } from '@angular/core'
 import { DOCUMENT } from '@angular/common'
+import { Router } from '@angular/router'
 
 
 @Component({
@@ -9,7 +10,11 @@ import { DOCUMENT } from '@angular/common'
     styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent {
-    constructor(@Inject(DOCUMENT) private document: Document, title: Title) {
+    constructor(@Inject(DOCUMENT) private document: Document, title: Title, private router: Router) {
         title.setTitle('Mii | Sign Up');
+    }
+
+    routerOpen() {
+        this.router.navigate(['/auth/login']);
     }
 }

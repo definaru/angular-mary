@@ -15,6 +15,6 @@ export class LoginComponent {
     }
 
     routerOpen() {
-        this.router.navigateByUrl('/sign-up');
+        this.router.navigate(['/auth/sign-up']);
     }
 }

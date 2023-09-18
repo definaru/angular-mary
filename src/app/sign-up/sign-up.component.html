@@ -1,3 +1,78 @@
-<section class="my-96">
-    <p>sign-up works!</p>
-</section>
+<div class="bg-white rounded-md shadow-md p-10">
+    <h3 class="text-3xl font-bold mb-4">Sign Up</h3>
+    <p class="text-gray-400">Already have an account? 
+        <a (click)="routerOpen()" class="cursor-pointer text-fuchsia-700 hover:text-fuchsia-900">
+            Sign in
+        </a>
+    </p>
+    <div class="grid gap-3 mt-6">
+        <div class="grid gap-1">
+            <label class="font-bold text-sm">User Name</label>
+            <input type="text" class="rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:border-fuchsia-500" placeholder="User Name" />
+        </div>
+        <div class="grid gap-1">
+            <label class="font-bold text-sm">Username or email</label>
+            <input type="text" class="rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:border-fuchsia-500" placeholder="Email address here" />
+        </div>
+        <div class="grid gap-1">
+            <label class="font-bold text-sm">Password</label>
+            <input type="password" class="rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:border-fuchsia-500" placeholder="**************" />
+        </div>
+        <div class="flex items-center justify-between">
+            <div class="inline-flex items-center gap-2">
+                <label
+                    class="relative flex cursor-pointer items-center rounded-full"
+                    for="login"
+                    data-ripple-dark="true"
+                >
+                    <input
+                    id="login"
+                    type="checkbox"
+                    class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-300 transition-all checked:border-fuchsia-500 checked:bg-fuchsia-500 checked:before:bg-fuchsia-500 hover:before:opacity-10"
+                    />
+                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-3.5 w-3.5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        stroke="currentColor"
+                        stroke-width="1"
+                    >
+                        <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                    </div>
+                </label>
+                <label
+                    class="mt-px cursor-pointer select-none font-light text-gray-700 text-sm"
+                    for="login"
+                >
+                    I agree to the 
+                    <a class="cursor-pointer text-fuchsia-700 hover:text-fuchsia-900 no-underline hover:underline">Terms of Service</a> 
+                    and <a class="cursor-pointer text-fuchsia-700 hover:text-fuchsia-900 no-underline hover:underline">Privacy Policy</a>.
+                </label>
+            </div>
+        </div>
+        <div class="mt-4">
+            <button class="rounded-md bg-fuchsia-700 hover:bg-fuchsia-900 text-center text-white w-full py-2.5 text-xl">
+                Create Free Account
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Get In Touch.
+Fill in the form to the right to get in touch with someone on our team, and we will reach out shortly.
+
+If you are seeking support please visit our support portal before reaching out directly.
+
+ + 0123-456-7890
+
+ hello@geekui.com
+
+2652 Kooter Lane Charlotte, NC 28263 -->
