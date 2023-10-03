@@ -1,0 +1,10 @@
+.contact:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #f1f5f9;
+    top: 43px;
+    right: 0;
+    z-index: 1;
+}

@@ -1,3 +1,89 @@
-<section class="my-96">
-    <p>contacts works!</p>
+<section class="bg-slate-50 border-b border-slate-100">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="mr-20 pt-40 pb-20">
+                <h3 class="text-5xl font-bold mb-5">Get In Touch.</h3>
+                <h6 class="mb-4 text-2xl text-gray-700 font-medium">
+                    Fill in the form to the right to get in touch with someone 
+                    on our team, and we will reach out shortly.
+                </h6>
+                <p class="mb-10 text-gray-500 text-xl font-light">
+                    If you are seeking support please visit our 
+                    <br />
+                    <a href="#" class="text-fuchsia-700">support portal</a> before reaching out directly.
+                </p>
+                <ul class="grid gap-4">
+                    <li class="flex items-center gap-2">
+                        <ng-icon name="heroDevicePhoneMobile" size="20" color="#a21caf" strokeWidth="1"></ng-icon>
+                        <a href="">+ 0123-456-7890</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <ng-icon name="heroEnvelopeOpen" size="20" color="#a21caf" strokeWidth="1"></ng-icon>
+                        <a href="">hello@geekui.com</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <ng-icon name="heroMapPin" size="20" color="#a21caf" strokeWidth="1"></ng-icon>
+                        <a href="">2652 Kooter Lane Charlotte, NC 28263</a>
+                    </li>
+                </ul>                
+            </div>
+            <div class="pt-40 pb-20 contact">
+                <form class="grid gap-5 pl-20 relative z-10">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <label class="font-medium text-sm">First Name <span class="text-red-400">*</span></label>
+                            <input type="text" class="rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:border-fuchsia-500 w-full" placeholder="First Name" />
+                        </div>
+                        <div>
+                            <label class="font-medium text-sm">Last Name <span class="text-red-400">*</span></label>
+                            <input type="text" class="rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:border-fuchsia-500 w-full" placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <label class="font-medium text-sm">Email: <span class="text-red-400">*</span></label>
+                            <input type="text" class="rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:border-fuchsia-500 w-full" placeholder="Email" />
+                        </div>
+                        <div>
+                            <label class="font-medium text-sm">Phone Number: <span class="text-red-400">*</span></label>
+                            <input type="text" class="rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:border-fuchsia-500 w-full" placeholder="Phone" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="font-medium text-sm">Contact Reason: <span class="text-red-400">*</span></label>
+                        <div class="relative">
+                            <select class="block appearance-none w-full rounded-md border border-slate-300 px-5 py-2.5 outline-none focus:border-fuchsia-500">
+                                <option value="Select" selected disabled>Select</option>
+                                <option value="Design">Design</option>
+                                <option value="Development">Development</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="font-medium text-sm">Message: <span class="text-red-400">*</span></label>
+                        <textarea 
+                            rows="3"
+                            class="rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:border-fuchsia-500 w-full" 
+                            placeholder="Messages"
+                            style="resize: none"
+                        ></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="rounded-md border border-fuchsia-700 bg-fuchsia-700 text-white px-4 py-2 hover:bg-fuchsia-900">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
 </section>

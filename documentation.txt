@@ -1,1 +1,4 @@
 https://www.npmjs.com/package/@ng-icons/heroicons
+https://geeksui.codescandy.com/geeks/pages/landings/home-academy.html
+https://api.telegram.org/bot5607440103:AAFFAWhhZL5dl58l_Qohsd_2aFgPmeN5v2o/getChat?chat_id=@chatfm_lux
+https://api.telegram.org/file/bot5607440103:AAFFAWhhZL5dl58l_Qohsd_2aFgPmeN5v2o/profile_photos/file_0.jpg
