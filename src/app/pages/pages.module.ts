@@ -13,6 +13,7 @@ import { FooterComponent } from '../ui/footer/footer.component'
 import { bootstrapFacebook, bootstrapTwitter, bootstrapInstagram } from '@ng-icons/bootstrap-icons'
 import { NgIconsModule } from '@ng-icons/core'
 import { heroLanguage } from '@ng-icons/heroicons/outline'
+import { RaitingComponent } from '../ui/block/raiting/stars.component'
 
 
 const routes: Routes = [
@@ -21,7 +22,6 @@ const routes: Routes = [
         component: PagesLayoutComponent, 
         children: [
             { path: '', component: HomeComponent },
-            //{ path: '',   redirectTo: '/home', pathMatch: 'full' },
             { path: 'about', component: AboutComponent },
             { path: 'business', component: BusinessComponent },
             { path: 'teacher', component: TeacherComponent },
@@ -35,6 +35,7 @@ const routes: Routes = [
     declarations: [
         MenuComponent,
         FooterComponent,
+        RaitingComponent,
         PagesLayoutComponent
     ],
     imports: [
